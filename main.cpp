@@ -48,9 +48,9 @@ int main(int argc, char** argv ){
             stringstream ss;  
             ss << word;  
             ss >> valor; 
+            #pragma omp atomic
             vectorcont[valor] = vectorcont[valor] + 1;
             }
-            
     }
     }   
     // Muestra de datos y resultados 
