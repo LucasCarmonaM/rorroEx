@@ -32,6 +32,7 @@ int main(int argc, char** argv ){
     if(leerDesde.fail()){
         std::cout << "El path de la ruta del archivo /archivo.log es erroneo, porfavor verificar "  << '\n';
         std::exit(1);
+        
     }
 
     #pragma omp parallel
